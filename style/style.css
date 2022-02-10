@@ -4,7 +4,7 @@
         url(../fonts/NotoSans.eot) format('eot'),
         url(../fonts/NotoSans.ttf) format('ttf');
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -24,7 +24,7 @@
         url(../fonts/Montserrat-Regular.eot) format('eot'),
         url(../fonts/Montserrat-Regular.ttf) format('ttf');
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -37,6 +37,17 @@
     font-weight: bold;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'FontsFree-Net-SFProText-Regular';
+    src: url(../fonts/FontsFree-Net-SFProText-Regular.woff) format('woff'),
+        url(../fonts/FontsFree-Net-SFProText-Regular.eot) format('eot'),
+        url(../fonts/FontsFree-Net-SFProText-Regular.ttf) format('ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
 
 a {
     color: inherit;
@@ -61,7 +72,7 @@ body {
     color: #FFFFFF;
 }
 
-h2 {
+.title {
     font-family: 'Montserrat', serif;
     font-weight: bold;
     font-size: 51px;
@@ -95,19 +106,36 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    border: 1px solid red;
 }
 
 .header__top {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom:18px;
+    max-width: 394px;
+    width: 100%;
+    padding-top: 20px;
 }
-
-.login {
-    margin-left: 108px
+.logo {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+   
+}
+.logo__img{
+    margin-left: -15px;
+}
+.logo__text{
+    fill: #fff;
+    display: block;
+    padding: 6px 0 0 6px;
 }
 
 .login svg {
     fill: #fff;
+    margin-right: 6px;
 }
 
 .login span {
@@ -119,10 +147,6 @@ h2 {
     border: 1px solid #000000;
 }
 
-.logo {
-    border: 1px solid white;
-}
-
 .header__content {
     display: flex;
 }
@@ -132,6 +156,8 @@ h2 {
     font-weight: bold;
     font-size: 64px;
     line-height: 70px;
+    margin: 0 0 129px 0;
+    padding-top: 125px;
 }
 
 .header__text {
@@ -157,11 +183,6 @@ h2 {
     transform: rotate(215deg);
 }
 
-
-.header__img img {
-    /*    width: 100%;*/
-    /*    height: auto;*/
-}
 
 .header__download {
     font-family: 'Montserrat', serif;
@@ -244,11 +265,6 @@ h2 {
     z-index: -2;
 }
 
-.mission__title,
-.mission__text {
-    max-width: 358px;
-    width: 100%;
-}
 .mission__text {
     font-size: 18px;
    line-height: 25px;
@@ -267,9 +283,4 @@ h2 {
     min-height: 1060px;
     height: 100%;
     align-items: flex-end;
-}
-.scanner__title,
-.scanner__text{
-    max-width: 316px;
-    width: 100%;
 }
