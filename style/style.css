@@ -53,13 +53,19 @@ button {
 body {
     color: #fff;
     font-family: 'NotoSans', serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 1;
     margin: 0;
     background: #000000;
     color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 62px;
 }
 
 .container {
@@ -164,8 +170,106 @@ body {
     font-size: 35px;
     line-height: 70px;
 }
-.header__bottom{
+
+.header__bottom {
     display: flex;
     justify-content: space-between;
     padding-bottom: 90px;
+}
+
+.main {}
+
+.mission {}
+
+.mission__battons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 236px;
+}
+
+.mission__btn {
+    max-width: 503px;
+    width: 100%;
+    height: 312px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 21.371px;
+    font-family: 'NotoSans', serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mission__btn span {
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration-line: underline;
+}
+.wrapper{
+     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.mission__wrapper {
+    position: relative;
+   
+}
+
+.mission__wrapper:before {
+    content: '';
+    position: absolute;
+    width: 498px;
+    height: 999px;
+    background-image: url(../images/phone.png);
+    top: -350px;
+    left: -40px;
+    transform: rotate(90deg);
+}
+
+.mission__wrapper:after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    right: 100px;
+    top: 0;
+    background: #F101BF;
+    opacity: 0.7;
+    filter: blur(50px);
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.mission__title,
+.mission__text {
+    max-width: 358px;
+    width: 100%;
+}
+.mission__text {
+    font-size: 18px;
+   line-height: 25px;
+}
+.scanner{
+  background-image: url(../images/scanner__back.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    
+}
+.scanner_inner{
+    display: flex;
+    justify-content: space-between;
+    min-height: 1060px;
+    height: 100%;
+    align-items: flex-end;
+}
+.scanner__title,
+.scanner__text{
+    max-width: 316px;
+    width: 100%;
 }
