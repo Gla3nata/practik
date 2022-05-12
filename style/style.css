@@ -47,16 +47,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "FontsFree-Net-SFProText-Regular";
-  src: url(../fonts/FontsFree-Net-SFProText-Regular.woff) format("woff"),
-    url(../fonts/FontsFree-Net-SFProText-Regular.eot) format("eot"),
-    url(../fonts/FontsFree-Net-SFProText-Regular.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -98,7 +88,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -139,10 +129,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   max-width: 407px;
   width: 100%;
-  padding: 2% 6% 0;
+  padding-top: 20px;
 }
 .logo {
   display: flex;
@@ -174,10 +163,10 @@ body {
   display: flex;
   margin-bottom: 90px;
   justify-content: space-between;
-  padding: 0 180px 0 100px;
+  padding: 0 80px 0 0;
 }
 .header__wraper {
-  padding-top: 130px;
+  padding-top: 12%;
   max-width: 645px;
   width: 100%;
 }
@@ -225,10 +214,13 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
-  padding: 0 110px;
+}
+.app-btn {
+  margin-right: 10px;
 }
 .buttons__top {
-  padding-right: 65px;
+  padding-right: 57px;
+  padding-top: 5px;
 }
 .cookie {
   background-color: #212834;
@@ -264,6 +256,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 90px;
 }
 
 .mission {
@@ -284,7 +277,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 20px 40px;
+  margin: 25px 40px 0;
   padding: 50px;
   text-align: left;
 }
@@ -303,9 +296,9 @@ body {
 
 .misson__img {
   transform: rotate(90deg);
-  max-width: 498px;
+  max-width: 505px;
   width: 100%;
-  height: auto;
+  height: 800px;
 }
 .misson__img img {
   width: 100%;
@@ -314,20 +307,20 @@ body {
 .mission__content {
   position: relative;
   width: 358px;
-  margin: 0px 11% 16% 0px;
+  margin: 0 5% 16% 0px;
 }
 .scanner {
   background-image: url(../images/scanner__back.jpg);
-  background-position: top center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-bottom: 290px;
 }
 
 .scanner__inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  padding-top: 467px;
+  padding-top: 570px;
 }
 .scanner__phone {
   display: flex;
@@ -343,6 +336,7 @@ body {
   max-width: 320px;
   width: 100%;
   padding-bottom: 70px;
+  padding-right: 70px;
 }
 .integration {
   margin-bottom: 130px;
@@ -356,7 +350,6 @@ body {
 .integration__inner {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
 }
 
 .integration__inner .desc {
@@ -406,25 +399,24 @@ body {
 }
 .code {
   margin-bottom: 70px;
-}
-.code__inner {
-  display: flex;
-  justify-content: space-between;
-  background: url(../images/background-code-1.png) 0 0 no-repeat,
-    url(../images/background-code-2.png) 100% 0 no-repeat,
+  background: url(../images/background-code-1.png) 12% 0 no-repeat,
+    url(../images/background-code-2.png) 90% 0 no-repeat,
     linear-gradient(
       179.83deg,
       #000000 -3.1%,
       rgba(0, 0, 0, 0) 56.76%,
       #000000 83.92%
     );
+}
+.code__inner {
+  display: flex;
+  justify-content: space-between;
   padding-left: 100px;
   padding-top: 100px;
   margin-bottom: 430px;
 }
 .code__text {
-  padding-top: 434px;
-  padding-left: 80px;
+  padding-top: 39%;
 }
 .code__buttons {
   padding-top: 40px;
@@ -435,18 +427,18 @@ body {
 }
 .code__phones {
   position: relative;
-  width: calc(100% - 540px);
+  width: calc(100% - 440px);
 }
 
 .code__phone-1 {
   position: absolute;
   left: 0;
-  top: 114px;
+  top: 125px;
 }
 .code__phone-2 {
   position: absolute;
-  right: 7%;
-  bottom: -390px;
+  left: 59%;
+  bottom: -53%;
 }
 .code__phone {
   display: flex;
@@ -499,7 +491,6 @@ body {
 .generate__inner {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
 }
 .generate .title {
   width: 381px;
@@ -540,33 +531,33 @@ body {
 }
 
 .ordering__wrap {
-  max-width: 580px;
+  max-width: 480px;
   width: 100%;
 }
 
 .text-1 {
   width: 285px;
   min-height: 113px;
-  left: 20%;
+  left: 15%;
   top: 35%;
 }
 .text-2 {
   width: 270px;
   min-height: 99px;
-  top: 21%;
-  right: 27%;
+  top: 20%;
+  right: 23%;
 }
 .text-3 {
   width: 185px;
   min-height: 91px;
-  bottom: 30%;
-  right: 18%;
+  bottom: 29%;
+  right: 12%;
 }
 .text-4 {
   width: 175.58px;
   min-height: 65.37px;
-  bottom: 24%;
-  left: 35%;
+  bottom: 23%;
+  left: 33%;
 }
 
 .iPhone {
@@ -576,7 +567,7 @@ body {
       rgba(0, 0, 0, 0) 51.62%,
       #000000 97.38%
     ),
-    url(../images/background-notab.png) no-repeat 40% 50%;
+    url(../images/background-notab.png) no-repeat 45% 57%;
   text-align: center;
   background-repeat: no-repeat;
   padding: 150px 0;
@@ -645,9 +636,6 @@ body {
   font-size: 24px;
   line-height: 33px;
   text-transform: uppercase;
-}
-.app-btn {
-  margin-right: 48px;
 }
 .btn__download {
 }
